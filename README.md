@@ -2,6 +2,15 @@
 
 This is a basic .NET core 3.0 application built to allow you to easily test your credentials and enviornment. Utilize this app to ensure that your API credentials are in working order and to make sure you can receive webhook data on your endpoint.
 
+* [Requirements](#requirements)
+* [Installation and Usage](#installation-and-usage)
+  * [API Credentials](#api-credentials)
+  * [Using ngrok](#using-ngrok)
+  * [Running the Application](#running-the-application)
+* [Contributing](#contributing)
+* [License](#license)
+
+
 ## Requirements
 
 This application requires you to have:
@@ -75,4 +84,4 @@ We ❤️ contributions from everyone! [Bug reports](https://github.com/Nexmo/do
 
 ## License
 
-This projet is under the [MIT License](LICENSE)
+This projet is under the [MIT License](LICENSE.md)
