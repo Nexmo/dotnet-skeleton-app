@@ -7,8 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Nexmo.Api;
 
 namespace dotnet_skeleton_app.Controllers
-{
-    [Route("[controller]")]
+{    
     public class SmsController : Controller
     {
         public IActionResult Index()
@@ -19,10 +18,13 @@ namespace dotnet_skeleton_app.Controllers
         [HttpPost]
         public ActionResult Send(string to, string from, string message)
         {
+            var NEXMO_API_KEY = Environment.GetEnvironmentVariable("NEXMO_API_KEY") ?? "NEXMO_API_KEY";
+            var NEXMO_API_SECRET = Environment.GetEnvironmentVariable("NEXMO_API_SECRET") ?? "NEXMO_API_SECRET";
+
             var client = new Nexmo.Api.Client(new Nexmo.Api.Request.Credentials() 
             { 
-                ApiKey = "NEXMO_API_KEY", 
-                ApiSecret = "NEXMO_API_SECRET"
+                ApiKey = NEXMO_API_KEY,
+                ApiSecret = NEXMO_API_SECRET
             });
 
             var results = client.SMS.Send(new SMS.SMSRequest
@@ -58,7 +60,10 @@ namespace dotnet_skeleton_app.Controllers
                 Debug.WriteLine("------------------------------------");
                 Debug.WriteLine("INCOMING TEXT");
                 Debug.WriteLine("From: " + response.msisdn);
-                Debug.WriteLine(" Message: " + response.text);
+                Debug.WriteLine($"To: {response.to}");
+                Debug.WriteLine("Message: " + response.text);                
+                Debug.WriteLine($"Id: {response.messageId}");
+                Debug.WriteLine($"Time Stamp: {response.timestamp}");                
                 Debug.WriteLine("------------------------------------");
                 return NoContent();
 
