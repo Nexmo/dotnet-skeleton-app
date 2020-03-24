@@ -7,6 +7,8 @@ This is a basic .NET core 3.0 application built to allow you to easily test your
   * [API Credentials](#api-credentials)
   * [Using ngrok](#using-ngrok)
   * [Running the Application](#running-the-application)
+	* [Sending an Sms](#sending-an-sms)
+	* [Receiving an Sms](#receiving-an-sms)
 * [Contributing](#contributing)
 * [License](#license)
 
