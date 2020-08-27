@@ -1,6 +1,6 @@
 ﻿# Nexmo .NET Skeleton Application
 
-This is a basic .NET core 3.0 application built to allow you to easily test your credentials and enviornment. Utilize this app to ensure that your API credentials are in working order and to make sure you can receive webhook data on your endpoint.
+This is a basic .NET core 3.1 application built to allow you to easily test your credentials and enviornment. Utilize this app to ensure that your API credentials are in working order and to make sure you can receive webhook data on your endpoint.
 
 * [Requirements](#requirements)
 * [Installation and Usage](#installation-and-usage)
@@ -32,13 +32,13 @@ git clone https://github.com/Nexmo/dotnet-skeleton-app.git
 
 ### Api Credentials
 
-Your Api Key and Api Secret can be found in the [Nexmo Dashboard](https://dashboard.nexmo.com/)
+Your Api Key and Api Secret can be found in the [Vonage API Dashboard](https://dashboard.nexmo.com/)
 
 You can set your Api Key or Api Secret for the app one of two ways:
 
-1. In Visual Studio - right click on the dotnet-skeleton-app projects and click properties. Inside the properties menu click debug, in debug add new enviornment variables for `NEXMO_API_KEY` and `NEXMO_API_SECRET`
+1. In Visual Studio - right click on the dotnet-skeleton-app projects and click properties. Inside the properties menu click debug, in debug add new enviornment variables for `VONAGE_API_KEY` and `VONAGE_API_SECRET`
 
-2. Open dotnet-skeleton-app/Controllers/SmsController.cs and replace the NEXMO_API_KEY and NEXMO_API_SECRET with your key/secret
+2. Open dotnet-skeleton-app/Controllers/SmsController.cs and replace the VONAGE_API_KEY and VONAGE_API_SECRET with your key/secret
 
 ### Using Ngrok
 
