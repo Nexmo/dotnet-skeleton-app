@@ -1,4 +1,4 @@
-﻿# Nexmo .NET Skeleton Application
+﻿# Vonage .NET Skeleton Application
 
 This is a basic .NET core 3.1 application built to allow you to easily test your credentials and enviornment. Utilize this app to ensure that your API credentials are in working order and to make sure you can receive webhook data on your endpoint.
 
@@ -25,7 +25,7 @@ This application requires you to have:
 1. Grab this repo
 
 ```text
-git clone https://github.com/Nexmo/dotnet-skeleton-app.git
+git clone https://github.com/Vonage/dotnet-skeleton-app.git
 ```
 
 2. Open `dotnet-skeleton-app.sln` in Visual Studio
@@ -42,13 +42,13 @@ You can set your Api Key or Api Secret for the app one of two ways:
 
 ### Using Ngrok
 
-In order to test the incoming webhook data from Nexmo, the Nexmo API needs an externally accessible URL to send that data to. A commonly used service for development and testing is ngrok. The service will provide you with an externally available web address that creates a secure tunnel to your local environment. The [Nexmo Developer Platform](https://developer.nexmo.com/concepts/guides/testing-with-ngrok) has a guide to getting started with testing with ngrok. 
+In order to test the incoming webhook data from Vonage, the Vonage API needs an externally accessible URL to send that data to. A commonly used service for development and testing is ngrok. The service will provide you with an externally available web address that creates a secure tunnel to your local environment. The [Nexmo Developer Platform](https://developer.nexmo.com/concepts/guides/testing-with-ngrok) has a guide to getting started with testing with ngrok.
 
-Once you have your ngrok URL, you can enter your [Nexmo Dashboard](https://dashboard.nexmo.com) and supply it as the `EVENT URL` for any Nexmo service that sends event data via a webhook. A good test case is creating a Voice application and providing the ngrok URL in the following format as the event url: 
+Once you have your ngrok URL, you can enter your [Vonage Dashboard](https://dashboard.nexmo.com) and supply it as the `EVENT URL` for any Vonage service that sends event data via a webhook. A good test case is creating a Voice application and providing the ngrok URL in the following format as the event url:
 
 `#{ngrok URL}/webhooks/inbound-sms`
 
-You can then text your Nexmo number, and with your skeleton application running you can observe the webhook data be received in real time for diagnosis of any issues and testing of your Nexmo account.
+You can then text your Vonage number, and with your skeleton application running you can observe the webhook data be received in real time for diagnosis of any issues and testing of your Vonage account.
 
 ## Running the Application
 
@@ -58,14 +58,14 @@ Once your API credentials have been added, and ngrok setup, you're ready, To sta
 This will bring you to the SMS controller page - here input
 
 1. The number you are sending to
-2. The Nexmo Number you are sending from
+2. The Vonage Number you are sending from
 3. The message you would like to send
 
 After that click 'send' and your message will be sent
 
 ### Receiving an SMS
 
-You can now send a sms message back to your Nexmo number - since you've configured ngrok you will see something like this output to your debug console
+You can now send a sms message back to your Vonage number - since you've configured ngrok you will see something like this output to your debug console
 
 ```text
 ------------------------------------
@@ -82,7 +82,7 @@ You can exit the application by hitting stop in visual studio.
 
 ## Contributing
 
-We ❤️ contributions from everyone! [Bug reports](https://github.com/Nexmo/dotnet-skeleton-app/issues), [bug fixes](https://github.com/Nexmo/dotnet-skeleton-app/pulls) and feedback on the application is always appreciated. Look at the [Contributor Guidelines](https://github.com/Nexmo/dotnet-skeleton-app/blob/master/CONTRIBUTING.md) for more information and please follow the [GitHub Flow](https://guides.github.com/introduction/flow/index.html).
+We ❤️ contributions from everyone! [Bug reports](https://github.com/Vonage/dotnet-skeleton-app/issues), [bug fixes](https://github.com/Vonage/dotnet-skeleton-app/pulls) and feedback on the application is always appreciated. Look at the [Contributor Guidelines](https://github.com/Nexmo/dotnet-skeleton-app/blob/master/CONTRIBUTING.md) for more information and please follow the [GitHub Flow](https://guides.github.com/introduction/flow/index.html).
 
 ## License
 
