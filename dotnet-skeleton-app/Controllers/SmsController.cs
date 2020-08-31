@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Nexmo.Api.Utility;
+using Vonage.Utility;
 using Vonage;
 using Vonage.Messaging;
 using Vonage.Request;

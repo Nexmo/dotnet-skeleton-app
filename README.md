@@ -25,7 +25,7 @@ This application requires you to have:
 1. Grab this repo
 
 ```text
-git clone https://github.com/Vonage/dotnet-skeleton-app.git
+git clone https://github.com/nexmo/dotnet-skeleton-app.git
 ```
 
 2. Open `dotnet-skeleton-app.sln` in Visual Studio
@@ -82,7 +82,7 @@ You can exit the application by hitting stop in visual studio.
 
 ## Contributing
 
-We ❤️ contributions from everyone! [Bug reports](https://github.com/Vonage/dotnet-skeleton-app/issues), [bug fixes](https://github.com/Vonage/dotnet-skeleton-app/pulls) and feedback on the application is always appreciated. Look at the [Contributor Guidelines](https://github.com/Nexmo/dotnet-skeleton-app/blob/master/CONTRIBUTING.md) for more information and please follow the [GitHub Flow](https://guides.github.com/introduction/flow/index.html).
+We ❤️ contributions from everyone! [Bug reports](https://github.com/nexmo/dotnet-skeleton-app/issues), [bug fixes](https://github.com/nexmo/dotnet-skeleton-app/pulls) and feedback on the application is always appreciated. Look at the [Contributor Guidelines](https://github.com/Nexmo/dotnet-skeleton-app/blob/master/CONTRIBUTING.md) for more information and please follow the [GitHub Flow](https://guides.github.com/introduction/flow/index.html).
 
 ## License
 
