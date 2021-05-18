@@ -1,6 +1,6 @@
 ﻿# Vonage .NET Skeleton Application
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fdev.azure.com%2Forgname%2Fprojectname%2F_apis%2Fgit%2Frepositories%2Freponame%2Fitems%3FscopePath%3D%2freponame%2fazuredeploy.json%26api-version%3D6.0)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FNexmo%2Fdotnet-skeleton-app%2Fazure-click-to-deploy%2FAzureTemplate.json)
 
 This is a basic .NET core 3.1 application built to allow you to easily test your credentials and enviornment. Utilize this app to ensure that your API credentials are in working order and to make sure you can receive webhook data on your endpoint.
 
