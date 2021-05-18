@@ -83,7 +83,7 @@
         "type": "Microsoft.AppConfiguration/configurationStores/keyValues",
         "apiVersion": "2020-07-01-preview",
         "properties": {
-          "value": "[parameters('VONAGE_API_KEY')]string",
+          "value": "[parameters('VONAGE_API_KEY')]",
           "contentType": "string",
           "tags": {}
         }
@@ -93,7 +93,7 @@
         "type": "Microsoft.AppConfiguration/configurationStores/keyValues",
         "apiVersion": "2020-07-01-preview",
         "properties": {
-          "value": "[parameters('VONAGE_API_SECRET')]string",
+          "value": "[parameters('VONAGE_API_SECRET')]",
           "contentType": "string",
           "tags": {}
         }
