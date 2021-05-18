@@ -76,27 +76,18 @@
           "siteConfig": {
             "linuxFxVersion": "[parameters('linuxFxVersion')]"
           }
-        }
-      },
-      {
-        "name": "mysite/VONAGE_API_KEY",
-        "type": "Microsoft.AppConfiguration/configurationStores/keyValues",
-        "apiVersion": "2020-07-01-preview",
-        "properties": {
-          "value": "[parameters('VONAGE_API_KEY')]",
-          "contentType": "string",
-          "tags": {}
-        }
-      },
-      {
-        "name": "mysite/VONAGE_API_SECRET",
-        "type": "Microsoft.AppConfiguration/configurationStores/keyValues",
-        "apiVersion": "2020-07-01-preview",
-        "properties": {
-          "value": "[parameters('VONAGE_API_SECRET')]",
-          "contentType": "string",
-          "tags": {}
-        }
+        },
+        "resources": [
+            {
+                "name": "appsettings",
+                "type": "config",
+                "apiVersion": "2018-02-01",
+                "properties": {
+                  "VONAGE_API_KEY": "[parameters('VONAGE_API_KEY')]",
+                  "VONAGE_API_SECRET": "[parameters('VONAGE_API_KEY')]"
+                }
+              }
+        ]
       }
     ]
   }
