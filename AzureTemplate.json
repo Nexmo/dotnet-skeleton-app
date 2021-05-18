@@ -30,7 +30,19 @@
         "metadata": {
           "description": "Location for all resources."
         }
-      }
+      },
+      "VONAGE_API_KEY": {
+          "type": "string",
+          "metadata": {
+              "description": "Your Vonage API Key"
+            }
+        },
+      "VONAGE_API_SECRET": {
+          "type": "string",
+          "metadata": {
+              "description": "Your Vonage API Secret"
+            }
+        }
     },
     "variables": {
       "webAppPortalName": "[concat(parameters('webAppName'), '-webapp')]",
@@ -67,19 +79,24 @@
         }
       },
       {
-        "name": "appsettings",
-        "type": "config",
-        "apiVersion": "2020-06-01",
-        "dependsOn": [
-          "[resourceId('Microsoft.Web/sites', variables('webSiteName'))]"
-        ],
-        "tags": {
-          "displayName": "appsettings"
-        },
+        "name": "VONAGE_API_KEY",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues",
+        "apiVersion": "2020-07-01-preview",
         "properties": {
-          "VONAGE_API_KEY": "[parameters('VONAGE_API_KEY')]",
-          "VONAGE_API_SECRET": "[parameters('VONAGE_API_SECRET']"
+          "value": "[parameters('VONAGE_API_KEY')]string",
+          "contentType": "string",
+          "tags": {}
         }
-      }      
+      },
+      {
+        "name": "VONAGE_API_KEY",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues",
+        "apiVersion": "2020-07-01-preview",
+        "properties": {
+          "value": "[parameters('VONAGE_API_KEY')]string",
+          "contentType": "string",
+          "tags": {}
+        }
+      }
     ]
   }
