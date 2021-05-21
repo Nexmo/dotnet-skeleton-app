@@ -33,10 +33,6 @@
             }
           }
     },
-    "variables": {
-        "webAppPortalName": "[concat(parameters('webAppName'), '-webapp')]",
-        "appServicePlanName": "[concat('AppServicePlan-', parameters('webAppName'))]"
-    },
     "resources": [
         {
             "type": "Microsoft.Web/sites",
