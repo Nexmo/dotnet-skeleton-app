@@ -9,7 +9,7 @@
               "description": "The SKU of App Service Plan "
             }
         },
-        "SITE_NAME":{
+        "webAppName":{
             "defaultValue": "Skeleton-App",
             "type": "string"
         },
@@ -37,7 +37,7 @@
         {
             "type": "Microsoft.Web/sites",
             "apiVersion": "2018-11-01",
-            "name": "[parameters('SITE_NAME')]",
+            "name": "[parameters('webAppName')]",
             "location":"East US",
             "kind": "app,linux",
             "sku": {
@@ -49,7 +49,7 @@
             },
             "resources": [
                 {
-                    "dependsOn":["[variables('SITE_NAME')]"],
+                    "dependsOn":["[variables('webAppName')]"],
                     "name": "appsettings",
                     "type": "config",
                     "apiVersion": "2018-02-01",
