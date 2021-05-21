@@ -53,7 +53,7 @@
             },
             "resources": [
                 {
-                    "dependsOn":["[variables('webAppName')]"],
+                    "dependsOn":["[variables('webAppPortalName')]"],
                     "name": "appsettings",
                     "type": "config",
                     "apiVersion": "2018-02-01",
