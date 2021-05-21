@@ -33,7 +33,7 @@
             }
           }
     },
-    "variables": {
+	"variables": {
         "webAppPortalName": "[concat(parameters('webAppName'), '-webapp')]",
         "appServicePlanName": "[concat('AppServicePlan-', parameters('webAppName'))]"
     },
@@ -41,7 +41,7 @@
         {
             "type": "Microsoft.Web/sites",
             "apiVersion": "2018-11-01",
-            "name": "[parameters('webAppName')]",
+            "name": "[variables('webAppPortalName')]",
             "location":"East US",
             "kind": "app,linux",
             "sku": {
