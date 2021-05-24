@@ -50,7 +50,7 @@ namespace dotnet_skeleton_app
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Sms}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
